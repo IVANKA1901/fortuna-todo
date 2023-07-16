@@ -1,24 +1,24 @@
-import { useEffect, useState } from "react";
-import { PieChart } from "react-minimal-pie-chart";
-import { motion, useAnimation } from "framer-motion";
+import { useEffect, useState } from 'react';
+import { PieChart } from 'react-minimal-pie-chart';
+import { motion, useAnimation } from 'framer-motion';
 
-import { AddButton, Form, Input } from "./Todos.styled";
-import { getRandomColor } from "../../helpers/randomColors";
+import { AddButton, Form, Input } from './Todos.styled';
+import { getRandomColor } from '../../helpers/randomColors';
 
 export const Todos = () => {
   // eslint-disable-next-line
   const [todos, setTodos] = useState([]);
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState('');
   const [pieChartData, setPieChartData] = useState([]);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = e => {
     setTodo(e.target.value);
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = e => {
     e.preventDefault();
-    if (todo !== "") {
-      setTodos((prev) => [
+    if (todo !== '') {
+      setTodos(prev => [
         ...prev,
         {
           text: todo,
@@ -26,12 +26,12 @@ export const Todos = () => {
           value: 1,
         },
       ]);
-      setTodo("");
+      setTodo('');
     }
   };
 
   useEffect(() => {
-    const pieChartData = todos.map((todoItem) => ({
+    const pieChartData = todos.map(todoItem => ({
       title: todoItem.text,
       value: todoItem.value,
       color: todoItem.color || getRandomColor(),
