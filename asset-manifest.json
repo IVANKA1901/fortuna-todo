@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fortuna-todo/static/css/main.a48b948c.css",
+    "main.js": "/fortuna-todo/static/js/main.7777642a.js",
+    "static/js/787.89dc488d.chunk.js": "/fortuna-todo/static/js/787.89dc488d.chunk.js",
+    "index.html": "/fortuna-todo/index.html",
+    "main.a48b948c.css.map": "/fortuna-todo/static/css/main.a48b948c.css.map",
+    "main.7777642a.js.map": "/fortuna-todo/static/js/main.7777642a.js.map",
+    "787.89dc488d.chunk.js.map": "/fortuna-todo/static/js/787.89dc488d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a48b948c.css",
+    "static/js/main.7777642a.js"
+  ]
+}
