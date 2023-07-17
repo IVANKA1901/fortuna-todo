@@ -71,6 +71,7 @@ export const Todos = () => {
           margin: '0 auto',
           borderRadius: '50%',
           background: 'transparent',
+          position: 'relative',
         }}
         whileHover={{
           scale: 1.1,
@@ -83,6 +84,20 @@ export const Todos = () => {
           labelStyle={{ fontSize: 4 }}
           animate
           animationDuration={500}
+        />
+        <div
+          style={{
+            position: 'absolute', // Position the stopper relative to the pie chart container
+            top: '5%', // Adjust the top position as needed
+            left: '50%', // Center the stopper horizontally
+            transform: 'translateX(-50%)', // Center the stopper horizontally
+            width: 0,
+            height: 0,
+            borderLeft: '10px solid transparent',
+            borderRight: '10px solid transparent',
+            borderBottom: '20px solid #ff0000', // Replace this with the desired stopper color or any other styling
+            boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.5)', // Add shadow to the stopper for a more realistic look
+          }}
         />
       </motion.div>
     </>
