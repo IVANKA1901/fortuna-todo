@@ -59,9 +59,24 @@ export const Todos = () => {
     <>
       <Form onSubmit={handleFormSubmit}>
         <Input type="text" value={todo} onChange={handleInputChange} />
-        <AddButton type="submit">Add todo</AddButton>
+        <AddButton type="submit">ADD TODO</AddButton>
       </Form>
-      <motion.div animate={controlls} onTap={handleTap}>
+      <motion.div
+        animate={controlls}
+        onTap={handleTap}
+        style={{
+          width: '700px',
+          height: '700px',
+          display: 'flex',
+          margin: '0 auto',
+          borderRadius: '50%',
+          background: 'transparent',
+        }}
+        whileHover={{
+          scale: 1.1,
+          boxShadow: 'rgb(82, 163, 112) 0px 0px 50px',
+        }}
+      >
         <PieChart
           data={pieChartData}
           label={({ dataEntry }) => dataEntry.title}

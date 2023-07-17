@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Form = styled.form`
   display: flex;
@@ -19,7 +19,7 @@ export const Input = styled.input`
   position: relative;
   box-sizing: border-box;
   display: block;
-  width: 100%;
+  width: 50%;
   background: linear-gradient(
     330.28deg,
     #2cfff2 100%,
@@ -64,7 +64,7 @@ export const AddButton = styled.button`
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-  padding: 7px 35px;
+  padding: 14px 35px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms ease 0s;
